@@ -20,3 +20,5 @@ meeting
     .catch((err) => {
         console.log(err.message)
     })
+
+console.log('hello')
