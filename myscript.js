@@ -20,35 +20,35 @@ const addToCalendar = (meetingDetails) => {
     // })
 }
 
-// meeting
-//     .then(addToCalendar)
-//     .then((res) => {
-//         console.log(JSON.stringify(res))
-//     })
-//     .catch((err) => {
-//         console.log(err.message)
-//     })
+meeting
+    .then(addToCalendar)
+    .then((res) => {
+        console.log(JSON.stringify(res))
+    })
+    .catch((err) => {
+        console.log(err.message)
+    })
 
-// console.log('hello')
+console.log('hello')
 
-// const promise1 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve('Promise2 resolved')
-//     })
-// })
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Promise2 resolved')
+    })
+})
 
-// const promise2 = Promise.resolve('Promise1 resolved')
+const promise2 = Promise.resolve('Promise1 resolved')
 
-// promise1.then((res) => console.log(res))
-// promise2.then((res) => console.log(res))
+promise1.then((res) => console.log(res))
+promise2.then((res) => console.log(res))
 
-// Promise.all([promise1, promise2]).then((res) => {
-//     console.log(res)
-// })
+Promise.all([promise1, promise2]).then((res) => {
+    console.log(res)
+})
 
-// Promise.race([promise1, promise2]).then((res) => {
-//     console.log(res)
-// })
+Promise.race([promise1, promise2]).then((res) => {
+    console.log(res)
+})
 
 async function myMeeting() {
     try {
