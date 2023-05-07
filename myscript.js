@@ -60,13 +60,40 @@ async function myMeeting() {
     }
 }
 
-myMeeting()(
-    // Use of IIFE
+myMeeting()
+// Use of IIFE
 
-    function doSomething() {
-        return {
-            name: shakib,
-            age: 30,
-        }
+// const iife = (function doSomething() {
+//     return {
+//         name: shakib,
+//         age: 30,
+//     }
+// })()
+
+// Avoid Using Global
+var current = null
+function init() {
+    //do something
+}
+
+//use Module patter instead of Global
+
+const myModule = (function () {
+    var current = null
+    function init() {
+        //do something
+        console.log(init)
     }
-)()
+    function change() {
+        //do something
+    }
+    function verify() {
+        //do something
+    }
+    return {
+        init,
+        change,
+        present: current,
+    }
+})()
+myModule.init()
