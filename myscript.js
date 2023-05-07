@@ -60,4 +60,13 @@ async function myMeeting() {
     }
 }
 
-myMeeting()
+myMeeting()(
+    // Use of IIFE
+
+    function doSomething() {
+        return {
+            name: shakib,
+            age: 30,
+        }
+    }
+)()
